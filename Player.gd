@@ -11,7 +11,7 @@ enum STATES{
 }
 
 #var gravity_s:= 9.8
-var speed_s:= 3.0
+var speed_s:= 3.33
 var velocity:= Vector3.ZERO
 var state:= 0
 
