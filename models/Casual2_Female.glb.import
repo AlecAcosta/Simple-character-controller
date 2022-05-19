@@ -2,12 +2,12 @@
 
 importer="scene"
 type="PackedScene"
-path="res://.import/Casual2_Female.gltf-095c9703e7236009977802e4ba3b195f.scn"
+path="res://.import/Casual2_Female.glb-b4b781134f2f892104b26839de725a90.scn"
 
 [deps]
 
-source_file="res://models/Casual2_Female.gltf"
-dest_files=[ "res://.import/Casual2_Female.gltf-095c9703e7236009977802e4ba3b195f.scn" ]
+source_file="res://models/Casual2_Female.glb"
+dest_files=[ "res://.import/Casual2_Female.glb-b4b781134f2f892104b26839de725a90.scn" ]
 
 [params]
 
