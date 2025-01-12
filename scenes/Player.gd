@@ -18,7 +18,10 @@ var speed_s:= 3.33
 var velocity:= Vector3.ZERO
 var state:= 0
 
+
 func _ready() -> void:
+	ModelAnimPlay.connect("animation_finished", self, "_on_AnimationPlayer_animation_finished")
+	
 	change_state(STATES.idle)
 
 func _input(event: InputEvent) -> void:
