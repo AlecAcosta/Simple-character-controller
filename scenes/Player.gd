@@ -1,7 +1,10 @@
 extends KinematicBody
 
-onready var ModelAnimPlay:= $"Casual2_Female/AnimationPlayer"
-onready var Model:= $"Casual2_Female"
+export(NodePath) var NodePath_ModelAnimPlay
+export(NodePath) var NodePath_Model
+
+onready var ModelAnimPlay:= get_node(NodePath_ModelAnimPlay)
+onready var Model:= get_node(NodePath_Model)
 onready var LookingAt:= $"LookingAt"
 
 enum STATES{

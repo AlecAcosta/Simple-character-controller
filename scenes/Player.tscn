@@ -5,14 +5,14 @@
 [ext_resource path="res://models/Pants.material" type="Material" id=4]
 [ext_resource path="res://models/Hair.material" type="Material" id=5]
 [ext_resource path="res://models/Shirt.material" type="Material" id=6]
-[ext_resource path="res://Player.gd" type="Script" id=7]
+[ext_resource path="res://scenes/Player.gd" type="Script" id=7]
 
 [sub_resource type="CubeMesh" id=21]
 size = Vector3( 0.1, 0.1, 0.5 )
 
 [sub_resource type="CylinderShape" id=20]
-radius = 0.1
 height = 1.0
+radius = 0.1
 
 [sub_resource type="ArrayMesh" id=1]
 resource_name = "Casual2_Female_Cube004"
@@ -2786,6 +2786,8 @@ tracks/19/keys = PoolRealArray( 0, 1, 0, 0, 0, 2.98023e-08, 1.13687e-12, 6.82121
 
 [node name="Player" type="KinematicBody"]
 script = ExtResource( 7 )
+NodePath_ModelAnimPlay = NodePath("Casual2_Female/AnimationPlayer")
+NodePath_Model = NodePath("Casual2_Female")
 
 [node name="LookingAt" type="Spatial" parent="."]
 
@@ -2793,7 +2795,6 @@ script = ExtResource( 7 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0.4 )
 visible = false
 mesh = SubResource( 21 )
-material/0 = null
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0 )
@@ -2924,11 +2925,6 @@ bones/22/bound_children = [  ]
 [node name="Body" type="MeshInstance" parent="Casual2_Female/CharacterArmature/Skeleton"]
 mesh = SubResource( 1 )
 skin = SubResource( 2 )
-material/0 = null
-material/1 = null
-material/2 = null
-material/3 = null
-material/4 = null
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Casual2_Female"]
 autoplay = "Idle"
